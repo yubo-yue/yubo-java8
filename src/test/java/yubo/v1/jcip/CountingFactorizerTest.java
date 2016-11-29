@@ -1,6 +1,5 @@
 package yubo.v1.jcip;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.concurrent.ExecutorService;
