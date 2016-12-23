@@ -23,6 +23,7 @@ public class GenericMethodTest {
         assertThat(copy, contains(equalTo(ints[0]), equalTo(ints[1]), equalTo(ints[2]), equalTo(ints[3]), equalTo(ints[4])));
     }
 
+    @Test
     public void testInference() {
         Integer[] ia = new Integer[100];
         Float[] fa = new Float[100];

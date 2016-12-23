@@ -11,7 +11,7 @@ public class FileClock implements Runnable {
             System.out.printf("%s\n", ZonedDateTime.now());
             try {
                 TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
+            } catch (final InterruptedException e) {
                 e.printStackTrace();
             }
         }
@@ -19,6 +19,8 @@ public class FileClock implements Runnable {
 
     public static void main(String[] args) {
         FileClock clock = new FileClock();
-        new Thread(clock).start();
+        Thread t = new Thread(clock);
+        t.start();
+        t.interrupt();
     }
 }
