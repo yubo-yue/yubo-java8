@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class CopyBytes {
     public static void main(String[] args) throws IOException {
-        try (FileInputStream in = new FileInputStream("xanadu.txt");
+        try (FileInputStream in = new FileInputStream("src/test/resources/xanadu.txt");
              FileOutputStream out = new FileOutputStream("outagain.txt")) {
 
             int c;

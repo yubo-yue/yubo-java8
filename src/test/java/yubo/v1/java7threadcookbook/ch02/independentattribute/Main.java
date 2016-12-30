@@ -18,8 +18,8 @@ public class Main {
             t2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
 
+        }
         System.out.printf("vacancies left in room1 %d\n", cinema.getVacanciesCinema1());
         System.out.printf("vacancies left in room2 %d\n", cinema.getVacanciesCinema2());
     }

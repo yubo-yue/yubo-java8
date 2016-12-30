@@ -22,7 +22,7 @@ public class DurationAndPeriodTest {
         Instant later = instant.plus(gap);
         long ns = Duration.between(instant, later).get(ChronoUnit.SECONDS);
 
-        assertThat(ns, is(equalTo(10)));
+        assertThat(ns, is(equalTo(10L)));
     }
 
     @Test
@@ -36,6 +36,6 @@ public class DurationAndPeriodTest {
         assertThat(period.getYears(), is(equalTo(56)));
         assertThat(period.getMonths(), is(equalTo(9)));
         assertThat(period.getDays(), is(equalTo(25)));
-        assertThat(p2, is(equalTo(20753)));
+        assertThat(p2, is(equalTo(20753L)));
     }
 }

@@ -11,6 +11,10 @@ import static org.junit.Assert.assertThat;
 
 public class AbsoluteTimeTest {
 
+    /**
+     * Instant and Duration
+     * @throws InterruptedException
+     */
     @Test
     public void testInstantAndDuration() throws InterruptedException {
         final Instant start = Instant.now();
