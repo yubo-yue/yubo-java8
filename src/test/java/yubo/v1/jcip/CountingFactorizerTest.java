@@ -18,9 +18,7 @@ public class CountingFactorizerTest {
         final ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
         final CountingFactorizer countingFactorizer = new CountingFactorizer();
 
-        IntStream.range(0, 10000).forEach(i -> {
-            executorService.submit(() -> countingFactorizer.service());
-        });
+        IntStream.range(0, 10000).forEach(i -> executorService.submit(() -> countingFactorizer.service()));
 
         executorService.shutdown();
         executorService.awaitTermination(1, TimeUnit.MINUTES);
