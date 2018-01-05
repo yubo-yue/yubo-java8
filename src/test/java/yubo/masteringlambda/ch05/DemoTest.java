@@ -50,7 +50,7 @@ public class DemoTest {
         assertThat(integers, hasSize(4));
     }
 
-    @Test
+    //@Test
     public void test4() throws IOException {
         final String start = "";
 

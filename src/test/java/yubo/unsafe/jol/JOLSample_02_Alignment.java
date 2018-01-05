@@ -1,0 +1,15 @@
+package yubo.unsafe.jol;
+
+import org.openjdk.jol.info.ClassLayout;
+import org.openjdk.jol.vm.VM;
+
+public class JOLSample_02_Alignment {
+    public static void main(String[] args) {
+        System.out.println(VM.current().details());
+        System.out.println(ClassLayout.parseClass(A.class).toPrintable());
+    }
+
+    public static class A {
+        long f;
+    }
+}
