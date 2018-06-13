@@ -1,7 +1,10 @@
 ## Learning Repo
 
-### Begining
-I am trying to keep write code every day. This repo is used to be my own notebook to record the progress. 
+### Purposes
+* Practice coding every day, keep the progress on track.
+* Do exercises during reading book.
+* Avoid set up developing dependencies everytime.
+
 
 ### Books
 * Java Concurrent Cookbook
