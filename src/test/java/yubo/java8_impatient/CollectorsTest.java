@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 public class CollectorsTest {
 
@@ -20,8 +21,7 @@ public class CollectorsTest {
         Map<String, String> resultMap = Arrays.asList(new Pair("key1", "str"), new Pair("key2", null)).stream()
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue, (a, b) -> a));
 
-        Assert.assertThat(resultMap.size(), is(Matchers.greaterThanOrEqualTo(1)));
-
+        assertThat(resultMap.size(), is(Matchers.greaterThanOrEqualTo(1)));
     }
 
     @Getter
