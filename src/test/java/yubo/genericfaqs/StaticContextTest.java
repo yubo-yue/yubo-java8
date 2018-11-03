@@ -12,7 +12,7 @@ public class StaticContextTest {
      */
     @Test
     public void test1() {
-        SomeClazz<String> someString = new SomeClazz<String>();
+        SomeClazz<String> someString = new SomeClazz<>();
         SomeClazz<Long> someInt = new SomeClazz<>();
 
         someString.value++;

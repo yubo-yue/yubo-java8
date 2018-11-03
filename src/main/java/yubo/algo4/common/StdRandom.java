@@ -30,6 +30,4 @@ public final class StdRandom {
         return seed;
     }
 
-
-
 }
