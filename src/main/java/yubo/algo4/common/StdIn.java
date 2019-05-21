@@ -21,6 +21,9 @@ public final class StdIn {
         resync();
     }
 
+    /**
+     * Set the scanner to read from standard input stream with utf-8 encoding schema...
+     */
     private static void resync() {
         setScanner(new Scanner(new BufferedInputStream(System.in), CHARSET_NAME));
     }
@@ -67,6 +70,11 @@ public final class StdIn {
         return ch.charAt(0);
     }
 
+    /**
+     * Using end of file archer to load all data from input.
+     *
+     * @return String of input.
+     */
     public static String readAll() {
         if (!scanner.hasNextLine()) {
             return "";

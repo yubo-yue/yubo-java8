@@ -4,9 +4,11 @@ import org.junit.Test;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.Period;
 import java.time.Year;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
@@ -74,5 +76,13 @@ public class LocalDateTest {
 
         final LocalDate nextWorkDay = today.with(nextWorkdayAdjuster);
         assertThat(nextWorkDay, is(equalTo(LocalDate.of(2018, 1, 22))));
+    }
+
+    @Test
+    public void testFormatLocalDateTime() {
+        final LocalDateTime today = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'hh:mm");
+        System.out.println(today.toString());
+        System.out.println(formatter.format(today));
     }
 }

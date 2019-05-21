@@ -1,5 +1,9 @@
 package yubo.algo4.learning.sort;
 
+/**
+ * Shell sort. It is transformation of insertion algorithm...
+ *
+ */
 public class Shell {
     private Shell() {
 
@@ -17,6 +21,7 @@ public class Shell {
                     SortCommons.exch(a, j, j - h);
                 }
             }
+            h = h / 3;
         }
     }
 }

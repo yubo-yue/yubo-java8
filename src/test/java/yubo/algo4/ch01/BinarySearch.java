@@ -1,7 +1,5 @@
 package yubo.algo4.ch01;
 
-import org.junit.Test;
-
 public class BinarySearch {
     /**
      *
