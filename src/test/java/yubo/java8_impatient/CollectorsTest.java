@@ -18,8 +18,9 @@ public class CollectorsTest {
 
     @Test
     public void test() {
-        Map<String, String> resultMap = Arrays.asList(new Pair("key1", "str"), new Pair("key2", null)).stream()
-                .collect(Collectors.toMap(Pair::getKey, Pair::getValue, (a, b) -> a));
+        Map<String, String> resultMap = Arrays.asList(new Pair("key1", "str"), new Pair("key2", "str2"))
+                .stream()
+                .collect(Collectors.toMap(Pair::getKey, Pair::getValue, String::concat));
 
         assertThat(resultMap.size(), is(Matchers.greaterThanOrEqualTo(1)));
     }
