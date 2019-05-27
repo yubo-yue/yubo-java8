@@ -27,7 +27,7 @@ public class FilesTest {
             final List<String> results = lines.filter(line -> line.length() > 5)
                     .sorted(Comparator.comparingInt(String::length).reversed())
                     .limit(5)
-                    .peek(word -> log.info("line: {}", word))
+                    .peek(word -> log.info("line:  s{}", word))
                     .collect(Collectors.toList());
 
             Assert.assertThat(results.size(), is(greaterThan(1)));
