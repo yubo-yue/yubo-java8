@@ -13,7 +13,7 @@
         <disruptor.version>3.3.6</disruptor.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.9.10.7</jackson.version>
     </properties>
     <build>
         <plugins>
